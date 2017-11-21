@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\Test MVC\aspnetapp\bin\Debug\netcoreapp2.0\aspnetapp.deps.json
+C:\Users\user\Desktop\Test MVC\aspnetapp\bin\Debug\netcoreapp2.0\aspnetapp.runtimeconfig.json
+C:\Users\user\Desktop\Test MVC\aspnetapp\bin\Debug\netcoreapp2.0\aspnetapp.runtimeconfig.dev.json
+C:\Users\user\Desktop\Test MVC\aspnetapp\bin\Debug\netcoreapp2.0\aspnetapp.dll
+C:\Users\user\Desktop\Test MVC\aspnetapp\bin\Debug\netcoreapp2.0\aspnetapp.pdb
+C:\Users\user\Desktop\Test MVC\aspnetapp\obj\Debug\netcoreapp2.0\aspnetapp.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Test MVC\aspnetapp\obj\Debug\netcoreapp2.0\aspnetapp.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Test MVC\aspnetapp\obj\Debug\netcoreapp2.0\aspnetapp.AssemblyInfo.cs
+C:\Users\user\Desktop\Test MVC\aspnetapp\obj\Debug\netcoreapp2.0\aspnetapp.dll
+C:\Users\user\Desktop\Test MVC\aspnetapp\obj\Debug\netcoreapp2.0\aspnetapp.pdb

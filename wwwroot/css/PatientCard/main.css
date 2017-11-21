@@ -1,0 +1,7 @@
+#checkUpList .card .date {
+    min-width: 110px;
+}
+
+#checkUpList .card .time {
+    min-width: 75px;
+}

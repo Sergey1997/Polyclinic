@@ -1,0 +1,83 @@
+@{ 
+    ViewData["Title"] = "Карточка пациента"; 
+    }
+<div class='row mt-4 ml-1'>
+    <div class='col-3'>
+        <div class='card p-3'>
+            <form>
+                <div class='form-group'>
+                    <label for='speciality'>Специальность врача</label>
+                    <select class='form-control form-control-sm' name='speciality'>
+                        <option>Окулист</option>
+                        <option>Дерматолог</option>
+                        <option>Невролог</option>
+                        <option>Хирург</option>
+                        <option>Терапевт</option>
+                    </select>
+                </div>
+                <div class='form-group'>
+                    <label for='datePicker'>Дата</label>
+                    <input type='text' name='datePicker' class='form-control form-contrl-sm'>
+                </div>
+                <div class='row justify-content-md-center mt-4'>
+                    <button type="submit" class="btn btn-primary">Применить фильтр</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class='col-9'>
+        <div id='checkUpList'>
+            <div class='card'>
+                <div class='card-header bg-transparent'>
+                    <div class='row' data-toggle='collapse' data-target='#checkUpList .card:nth-child(1) .collapse'>
+                        <span class='date col-2 text-right'>19.11.2017</span>
+                        <span class='time col-1'>15:30</span>
+                        <div class='col-8 text-center'>
+                            <span class='speciality'>Хирург</span>
+                            <span class='doctorName'>Иванов Иван Петрович</span>
+                        </div>
+                    </div>
+                </div>
+                <div class='collapse'>
+                    <div class='card-body'>
+                        <h4 class="card-title diagnosis-title">Диагноз</h4>
+                        <p class="card-text diagnosis">Перелом руки</p>
+                        <h4 class="card-title recomend-title">Рекомендации</h4>
+                        <p class="card-text recomend">Употребление кальция</p>
+                    </div>
+                </div>
+            </div>
+            <div class='card'>
+                <div class='card-header bg-transparent'>
+                    <div class='row' data-toggle='collapse' data-target='#checkUpList .card:nth-child(2) .collapse'>
+                        <span class='date col-2 text-right'>20.11.2017</span>
+                        <span class='time col-1'>15:30</span>
+                        <div class='col-8 text-center'>
+                            <span class='speciality'>Хирург</span>
+                            <span class='doctorName'>Иванов Иван Петрович</span>
+                        </div>
+                    </div>
+                </div>
+                <div class='collapse'>
+                    <div class='card-body'>
+                        <h4 class="card-title diagnosis-title">Диагноз</h4>
+                        <p class="card-text diagnosis">Перелом руки</p>
+                        <h4 class="card-title recomend-title">Рекомендации</h4>
+                        <p class="card-text recomend">Употребление кальция</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Styles {
+    <link rel='stylesheet' href='lib/datetimepicker/css/daterangepicker.css' asp-append-version='true' />
+    <link rel='stylesheet' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' asp-append-version='true' />
+    <link rel='stylesheet' href='css/PatientCard/main.css' asp-append-version='true' /> 
+}
+
+@section Scripts {
+    <script src='/lib/moment/min/moment-with-locales.min.js' asp-append-version='true'></script>
+    <script src='lib/datetimepicker/js/daterangepicker.js' asp-append-version='true'></script>
+    <script src='/js/PatientCard/main.js' asp-append-version='true'></script>
+}
