@@ -1,0 +1,4 @@
+﻿@model User
+@{  int endIndex = Model.Email.LastIndexOf("@");
+<span>@Model.Email.Substring(0,endIndex)</span>
+}

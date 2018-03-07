@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Company.Models.BusinessLogic.Provider>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Поставщики</h2>
+
+<p>
+    <a asp-action="Create">Добавить поставщика</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                   Наименование
+                </th>
+            <th>
+               Материал
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material.Name)
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Company.Models.BusinessLogic.ObjectOfExpenditure>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Табель учёта</h2>
+
+<p>
+    <a asp-action="Create">Создать статью расходов</a> |
+    <a asp-action="CountlyMonth">Посчитать расходы</a>
+</p>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>
+               Материал
+            </th>
+            <th>
+               Количество
+            </th>
+            <th>
+               Поставщик
+            </th>
+            <th>
+               Учётчик
+            </th>
+            <th>
+               Дата
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Material.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Provider.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
