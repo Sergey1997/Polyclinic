@@ -12,5 +12,6 @@ namespace Company.Models.BusinessLogic
         [Required]
         public string Name { get; set; }
         public ICollection<Provider> Providers { get; set; }
+        //Added test commit.
     }
 }
